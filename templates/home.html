@@ -1,0 +1,553 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!--Bloque que contiene presentacion visual-->
+<div class="profile-page">
+  <div class="wrapper">
+    <div class="page-header page-header-small" filter-color="green">
+      <div class="page-header-image" data-parallax="true" style="background-image: url({{ url_for('static', filename='images/cc-bg-1.jpg') }})"></div>
+      <div class="container">
+        <div class="content-center">
+          <div class="cc-profile-image"><a href="#"><img src="{{ url_for('static', filename='images/miFoto.jpeg') }}" alt="Image"/></a></div>
+          <div class="h2 title">Damian Debortoli</div>
+          <p class="category text-white">Desarrollador backend JR</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Contactame</a><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="button-container">
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/damian-debortoli-23844a179/" rel="tooltip" title="Follow me on LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="mailto:damiandebortolilb@gmail.com" rel="tooltip" title="Follow me on Google+"><i class="fa fa-google-plus"></i></a>
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.instagram.com/damian.debortoli/" rel="tooltip" title="Follow me on Instagram"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Bloque que contiene informacion sobre mi-->
+<div class="section" id="about">
+  <div class="container">
+    <div class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class="card-body">
+            <div class="h4 mt-0 title">Sobre mi</div>
+            <p>Hola! Soy Damian Agustín Debortoli. Desarrollador backend, actualmente profesionalizandome en Python.</p>
+            <p>En este sitio podras ver un cv mas detallado sobre mis habilidades y experiencia, ademas de un portafolios donde iré subiendo todos mis proyectos! </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="card-body">
+            <div class="h4 mt-0 title">Informacion basica</div>
+            <div class="row">
+              <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
+              <div class="col-sm-8">21</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
+              <div class="col-sm-8">damiandebortolilb@gmail.com</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase">Telefono:</strong></div>
+              <div class="col-sm-8">+54 1123999987</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase">Direccion:</strong></div>
+              <div class="col-sm-8">Av. Pedro de mendoza 1727 - Argentina - CABA</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase">Lenguajes:</strong></div>
+              <div class="col-sm-8">Español(Nativo), Ingles(Intermedio)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="skill">
+  <div class="container">
+    <div class="h4 text-center mb-4 title">Habilidades profesionales</div>
+    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div class="card-body">
+        <div class="row">
+          <!--Primer columna de habilidades-->
+          <div class="col-md-6">
+              <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        PYTHON
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      Dominio intermedio de Python. Poseo experiencia programando en objetos. Utilizando el Framework "Flask" para el desarrollo web.
+                      Hice dos cursos sobre BigData y machineLearning, actualmente aplicando dichos conocimientos en mi portafolios.
+                      <br>Tengo experiencia usando multiples librerias de Python para poder aplicar soluciones personalizadas para brindar la mejor solucion a cada problema.
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        INTEGRACION RESTAPI/SOAP (IBM IIB)
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      Mas de 1 año y medio de experiencia en el desarrollo de servicios de integracion.
+                      Principalmente aplicaciones RESTAPI, manejando pequeños y grandes volumenes de datos, transformandolos para consumir endpoints o bases de datos.
+                      Tambien poseo experiencia en el armado de aplicaciones SOAP, desde armado de WSDL hasta el despliegue del programa en produccion.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        FRONT END (HTML, CSS, JAVASCRIPT,BOOTSTRAP)
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      Excelente dominio de html, conocimientos intermedios de CSS y Javascript. Utilizo mayormente bootstrap para poder proveer webs responsive.
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!--Segunda columna de habilidades-->
+          <div class="col-md-6">
+              <div id="accordion2">
+                <div class="card">
+                  <div class="card-header" id="headingFourth">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFourth" aria-expanded="true" aria-controls="collapseFourth">
+                        GITHUB
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFourth" class="collapse show" aria-labelledby="headingFourth" data-parent="#accordion2">
+                    <div class="card-body">
+                      Excelente dominio de GIT, poseo mas de 2 años de experiencia usando EGIT para guardar proyectos personales y laborales en la nube, administrar los ambientes y mantener un buen historial de commits.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFifth" aria-expanded="false" aria-controls="collapseFifth">
+                        GESTION DE TAREAS DE PROYECTO(JIRA,TRELLO)
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFifth" class="collapse" aria-labelledby="headingFive" data-parent="#accordion2">
+                    <div class="card-body">
+                      Dos años de experiencia utilizando JIRA para administrar las tareas de desarrollo de mis proyectos laborales. 
+                      Tambien tengo mas de dos años de experiencia usando Trello como herramienta complementaria a JIRA y objetivos personales(Estudios, proyectos personales, etc).
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingSixth">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSixth" aria-expanded="false" aria-controls="collapseThree">
+                        BASES DE DATOS (SQL SERVER)
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseSixth" class="collapse" aria-labelledby="headingSixth" data-parent="#accordion2">
+                    <div class="card-body">
+                      Dos años de experiencia usando SQL SERVER. Mi conocimiento se expande pero no se limita a:
+                      Armado de consultas SQL, Altas, bajas y modificaciones, creacion y uso de Stored Procedure, entre otras habilidades.
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 ml-auto mr-auto">
+        <div class="h4 text-center mb-4 title">Portfolio</div>
+        <div class="nav-align-center">
+          <ul class="nav nav-pills nav-pills-primary" role="tablist">
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#web-development" role="tablist"><i class="fa fa-laptop" aria-hidden="true"></i></a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#graphic-design" role="tablist"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Photography" role="tablist"><i class="fa fa-camera" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="tab-content gallery mt-5">
+      <div class="tab-pane active" id="web-development">
+        <div class="ml-auto mr-auto">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                  <figure class="cc-effect"><img src="images/project-1.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Recent Project</div>
+                      <p>Web Development</p>
+                    </figcaption>
+                  </figure></a></div>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                  <figure class="cc-effect"><img src="images/project-2.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Startup Project</div>
+                      <p>Web Development</p>
+                    </figcaption>
+                  </figure></a></div>
+            </div>
+            <div class="col-md-6">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                  <figure class="cc-effect"><img src="images/project-3.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Food Order Project</div>
+                      <p>Web Development</p>
+                    </figcaption>
+                  </figure></a></div>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                  <figure class="cc-effect"><img src="images/project-4.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Web Advertising Project</div>
+                      <p>Web Development</p>
+                    </figcaption>
+                  </figure></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="graphic-design" role="tabpanel">
+        <div class="ml-auto mr-auto">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
+                  <figure class="cc-effect"><img src="images/graphic-design-1.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Triangle Pattern</div>
+                      <p>Graphic Design</p>
+                    </figcaption>
+                  </figure></a></div>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
+                  <figure class="cc-effect"><img src="images/graphic-design-2.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Abstract Umbrella</div>
+                      <p>Graphic Design</p>
+                    </figcaption>
+                  </figure></a></div>
+            </div>
+            <div class="col-md-6">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
+                  <figure class="cc-effect"><img src="images/graphic-design-3.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Cube Surface Texture</div>
+                      <p>Graphic Design</p>
+                    </figcaption>
+                  </figure></a></div>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
+                  <figure class="cc-effect"><img src="images/graphic-design-4.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Abstract Line</div>
+                      <p>Graphic Design</p>
+                    </figcaption>
+                  </figure></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="Photography" role="tabpanel">
+        <div class="ml-auto mr-auto">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
+                  <figure class="cc-effect"><img src="images/photography-1.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Photoshoot</div>
+                      <p>Photography</p>
+                    </figcaption>
+                  </figure></a></div>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
+                  <figure class="cc-effect"><img src="images/photography-3.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Wedding Photoshoot</div>
+                      <p>Photography</p>
+                    </figcaption>
+                  </figure></a></div>
+            </div>
+            <div class="col-md-6">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
+                  <figure class="cc-effect"><img src="images/photography-2.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Beach Photoshoot</div>
+                      <p>Photography</p>
+                    </figcaption>
+                  </figure></a></div>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
+                  <figure class="cc-effect"><img src="images/photography-4.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Nature Photoshoot</div>
+                      <p>Photography</p>
+                    </figcaption>
+                  </figure></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Bloque que contiene mi experiencia laboral-->
+<div class="section" id="experience">
+  <div class="container cc-experience">
+    <div class="h4 text-center mb-4 title">Experiencia laboral</div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>Enero 2020 - Actualidad</p>
+            <div class="h5">EXISOFT</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Desarrollador de servicios de integraciones</div>
+            <p>Mi labor consiste en el desarrollo de aplicaciones RESTAPI, manejando pequeños y grandes volumenes de datos, encargandome de validarlos, y mapearlos en base a los distintos requerimientos, para posteriormente consumir un endpoint, usarlos en bases de datos, entre otros.</p>
+            <p>Tambien trabajo con Aplicaciones SOAP, enfocandome mas en el la transformacion de datos.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>MARZO 2018 - AGOSTO 2018</p>
+            <div class="h5">GESTION GLOBAL BROKER</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Desarrollador web</div>
+            <p>Mi experiencia en esta empresa fue desarrollando un sitio web de cero, la cual principalmente era para proveer de informacion a los potenciales clientes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>MARZO 2019 - MAYO 2019</p>
+            <div class="h5">PRIX ASESORES</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Mantenimiento web</div>
+            <p>El sitio web del cliente tenia tiempos de carga muy largos, por lo que mis tareas fueron la de optimizar la misma para que el motor de Google le diera mejor posicionamiento</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Bloque que contiene datos sobre educacion-->
+<div class="section">
+  <div class="container cc-education">
+    <div class="h4 text-center mb-4 title">Educacion</div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>2013 - 2018</p>
+            <div class="h5">Titulo técnico secundario</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Técnico en computación</div>
+            <p class="category">Escuela técnica n°1 "Otto Krause"</p>
+            <p>Especialidad COMPUTACION. Se puede encontrar la curricula
+                completa en el siguiente <a href="https://www.buenosaires.gob.ar/sites/gcaba/files/folleto-tecnica-2013_web_0_0.pdf">link.<a/>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>JUNIO 2017 - MAYO 2018</p>
+            <div class="h5">Cursada extracurricular</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Front End jr</div>
+            <p class="category">AprendeProgramando BA</p>
+            <p>Dos cursadas de 4 meses c/u promocionadas por el gobierno de la ciudad de Buenos Aires. El contenido fue: HTML, CSS y Javascript </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>Junio 2021 - Actualidad</p>
+            <div class="h5"><a style="color:white" href="http://www.sistemas-utnfra.com.ar/#/pages/carrera/tecnico-programacion/programa">Técnicatura universitaria</a></div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Tecnicatura universitaria en programacion</div>
+            <p class="category">Universidad tecnologica nacional</p>
+            <p>Carrera en la que se estudia el funcionamiento de computadoras, las bases de datos, las telecomunicaciones, la inteligencia artificial, entre otros. Curricula completa en</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>NOVIEMBRE 2020 - ACTUALIDAD</p>
+            <div class="h5">Cursada extracurricular</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Programador Python (BigData,MachineLearning) JR</div>
+            <p class="category">U. Austral - LinkedInLearning</p>
+            <p>Cursada introductaria a Python (desde tipos de datos hasta objetos) brindada por la universidad Austral.
+            Posteriormente inicié una cursada en LinkedInLearning donde estoy aprendiendo bigData y machineLearning
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Bloque que contiene referencias laborales-->
+<div class="section" id="reference">
+  <div class="container cc-reference">
+    <div class="h4 mb-4 text-center title">Referencias</div>
+    <div class="card" data-aos="zoom-in">
+      <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#cc-Indicators" data-slide-to="0"></li>
+          <!--<li data-target="#cc-Indicators" data-slide-to="2"></li>-->
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="{{ url_for('static', filename='images/prixAsesores.jpg') }}" alt="Image"/>
+                <div class="h5 pt-2">Prix Asesores</div>
+                <p class="category">CEO</p>
+              </div>
+              <div class="col-lg-10 col-md-9">
+                <p>"Damian es muy pro activo, ágil y eficiente" </p>
+              </div>
+            </div>
+          </div>
+          <!--<div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-3.jpg" alt="Image"/>
+                <div class="h5 pt-2">Alexander</div>
+                <p class="category">CEO / Webnote</p>
+              </div>
+              <div class="col-lg-10 col-md-9">
+                <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="contact">
+  <div class="cc-contact-information" style="background-image: url({{ url_for('static', filename='images/staticmap.png') }})">
+    <div class="container">
+      <div class="cc-contact">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="card mb-0" data-aos="zoom-in">
+              <div class="h4 text-center title">Contactame</div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <form action="https://formspree.io/f/xpzkpdkk" method="POST">
+                      <div class="p pb-3"><strong>Sientete libre de ponerte en contacto conmigo </strong></div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
+                            <input class="form-control" type="text" name="name" placeholder="Nombre" required="required"/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-file-text"></i></span>
+                            <input class="form-control" type="text" name="Subject" placeholder="Asunto" required="required"/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                            <input class="form-control" type="email" name="_replyto" placeholder="E-mail" required="required"/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="form-group">
+                            <textarea class="form-control" name="message" placeholder="Su mensaje" required="required"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <button class="btn btn-primary" type="submit">Enviar</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <p class="mb-0"><strong>Direccion </strong></p>
+                    <p class="pb-2">AV. Pedro De Mendoza 1727 - ARGENTINA - CABA</p>
+                    <p class="mb-0"><strong>Telefono</strong></p>
+                    <p class="pb-2">+54 11 23999987</p>
+                    <p class="mb-0"><strong>Email</strong></p>
+                    <p>damiandebortolilb@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock%}
