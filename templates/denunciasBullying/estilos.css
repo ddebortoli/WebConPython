@@ -1,0 +1,89 @@
+
+header#home {
+  text-align: center;
+  color: #fff;
+  background-image: url(img/hero_imagen.png);	   
+  height: 0;
+  padding: 0; /* remove any pre-existing padding, just in case */
+  padding-bottom: 55%; /* for aspect ratio */    
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+section#bullying {
+  border-top: 3px solid #5D3F38;
+}
+
+section#bullying-leer-mas {
+  border-top: 10px solid #5D3F38;
+}
+
+section#formularios {
+  border-top: 2px solid #17A2B8;
+}
+
+#modalMensaje {
+  white-space: pre-line;
+  /*  white-space: pre-wrap; */
+}
+
+#img2 {
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #191B1C;
+  color: #fff;
+}
+
+section#consecuencias {
+  border-top: 5px solid #188a9a;
+}
+
+a#volver {
+  color: #17A2B8;
+  font-weight: 600;
+  background-color: white;
+}
+
+a#volver:hover {
+  color:white;
+  background-color: #054b96;
+}
+
+@media screen and (max-width: 768px) {
+
+  section#bullying {
+    background-color: #007BFF;
+    color: #fff;
+  }
+
+  section#bullying h2.text-info,
+  section#bullying h4  {color: #fff !important;}
+
+  section#bullying button.btn-primary {
+    background-color: #fff;
+    color:#333;
+  }
+
+  section#bullying button.btn-primary:hover {
+    background-color: #5D3F38;
+    color: #fff;
+  }
+
+  #img2 {
+    margin-top: 50px;
+    display: none;
+  }
+}
+
+.boton_enviar {
+  text-align: center;
+  padding-bottom: 50px;
+}

@@ -2,6 +2,7 @@
 
 {% block content %}
 <!--Bloque que contiene presentacion visual-->
+
 <div class="profile-page">
   <div class="wrapper">
     <div class="page-header page-header-small" filter-color="green">
@@ -199,33 +200,33 @@
           <div class="row">
             <div class="col-md-6">
               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/project-1.jpg" alt="Image"/>
+                  <figure class="cc-effect"><img src="{{ url_for('static', filename='images/invoices.png') }}" alt="Image"/>
                     <figcaption>
-                      <div class="h4">Recent Project</div>
-                      <p>Web Development</p>
+                      <div class="h4">Speedmax invoices</div>
+                      <p>Sistema de facturacion</p>
                     </figcaption>
                   </figure></a></div>
               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/project-2.jpg" alt="Image"/>
+                  <figure class="cc-effect"><img src="{{ url_for('static', filename='images/reportBullying.png') }}" alt="Image"/>
                     <figcaption>
-                      <div class="h4">Startup Project</div>
-                      <p>Web Development</p>
+                      <div class="h4">Formulario de denuncias</div>
+                      <p>Sitio web front-end</p>
                     </figcaption>
                   </figure></a></div>
             </div>
             <div class="col-md-6">
               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/project-3.jpg" alt="Image"/>
+                  <figure class="cc-effect"><img src="{{ url_for('static', filename='images/rompecabezas.png') }}" alt="Image"/>
                     <figcaption>
-                      <div class="h4">Food Order Project</div>
-                      <p>Web Development</p>
+                      <div class="h4">Rompecabezas</div>
+                      <p>Juego web</p>
                     </figcaption>
                   </figure></a></div>
               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                  <figure class="cc-effect"><img src="images/project-4.jpg" alt="Image"/>
+                  <figure class="cc-effect"><img src="{{ url_for('static', filename='images/website.png') }}" alt="Image"/>
                     <figcaption>
-                      <div class="h4">Web Advertising Project</div>
-                      <p>Web Development</p>
+                      <div class="h4">Web informativa</div>
+                      <p>Sitio web informativo</p>
                     </figcaption>
                   </figure></a></div>
             </div>

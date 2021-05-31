@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Proyecto Integrador - Desarrollo Web Nivel 2 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Bootstrap CSS -->    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
+  </head>
+
+  <body>
+
+    <header id="home">
+      <div class="container">
+        <div class="intro-text"></div>
+      </div>
+    </header>
+
+    <section id="bullying"> 
+      <div class="container-fluid">
+        <div class="row pt-5 pb-5 ml-4 mr-4">
+          <div class="col">
+            <h4 class="text-secondary pb-2">Existen hoy en día varios tipos de acoso en el área virtual: Grooming, Sexting y Cyberbullying...</h4>
+            <h2 class="text-info pb-2">¿Qué es el ciberbullying?</h2>
+            <p>Existe una variedad de acoso escolar que es conocida como <i>ciberbullying</i> o ciberacoso escolar, caracterizada por el uso indiscriminado del internet, las redes sociales, chats, para cometer la conducta de acoso.</p>
+            <p>Se puede decir que en el cyberbullying hay una persecución de forma repetitiva y hostil que pretende dañar al otro difamandolo.</p>
+            <p>Las formas más comunes son la difusión de falsos rumores, videos o fotos humillantes, y la creación de perfiles o sitios para agredir a la víctima. También puede ocurrir que el agresor se haga pasar por otra persona para decir cosas desagradables o amenazar a la víctima con publicar información personal.</p>
+
+            <a id="mas" href="leer_mas.html" type="button" class="btn btn-primary">Leer más...</a>
+
+          </div><!-- End of col -->
+        </div><!-- End of row -->
+      </div><!-- End of container -->
+    </section>    
+
+    <form id="formulario" class="needs-validation" novalidate> 
+      <section id="formularios" class="bg-light">
+        <div class="container-fluid">  
+
+          <div class="row col pt-5 pb-5 ml-4 mr-4">
+
+            <!--COLUMNA FORMULARIO -->
+            <div class="col-md-8">
+
+              <h2 class="text-info">Deja tu denuncia</h2>  
+
+              <!-- ROW 1 -->
+              <div class="form-row mt-4">
+                <div class="col-md-6">
+                  <label for="Nombre">Nombre</label>
+                  <input type="text" class="form-control" id="Nombre" placeholder="Ingresar nombre" value="" required>
+                  <div class="invalid-feedback">
+                    Por favor, ingrese un nombre.
+                  </div>
+                </div> <!-- End of col-md-6-->
+
+                <div class="col-md-6">
+                  <label for="Apellido">Apellido</label>
+                  <input type="text" class="form-control" id="Apellido" placeholder="Ingresar apellido" value="" required>
+                  <div class="invalid-feedback">
+                    Por favor, ingrese un apellido.
+                  </div>
+                </div><!-- End of col-md-6-->
+              </div><!-- End of form-row 1 -->
+
+              <!-- ROW 2 -->
+              <div class="form-row mt-4">
+                <legend class="col-form-label col-sm-2 pt-0">Tipo de bullying:</legend>                             
+                <div class="col-sm-10">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" 
+                           id="virtualRadio" 
+                           name="TipoBullying" 
+                           class="custom-control-input" 
+                           value="Virtual"
+                           checked>
+                    <label class="custom-control-label" for="virtualRadio">Virtual (redes sociales, etc)</label>
+                  </div>
+
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" 
+                           id="presencialRadio" 
+                           name="TipoBullying" 
+                           class="custom-control-input"
+                           value="Presencial">
+                    <label class="custom-control-label" for="presencialRadio">Presencial</label>
+                  </div>
+                </div><!-- End of col-sm-10 -->
+              </div><!-- End of form-row -->
+
+              <!-- ROW 3 -->
+              <div class="form-row mt-4">
+                <label for="barriosSelect" >Barrio:</label>
+                <select class="form-control" name="Barrios" id="barrios" required>
+                  <option value="">Seleccionar un Barrio...</option>
+                </select>
+                <div class="invalid-feedback">Por favor, seleccione un barrio.</div>
+              </div><!-- End of form-row -->
+
+              <!-- ROW 4 -->
+              <div class="form-row mt-4">
+                <label for="Contacto">Contacto (email o teléfono)</label>
+                <input type="text" class="form-control" id="Contacto" placeholder="Ingresar un contacto" required>
+                <div class="invalid-feedback">
+                  Por favor, ingrese un Contacto (email o teléfono).
+                </div>
+              </div><!-- End of form-row -->
+
+              <!-- ROW 5 -->
+              <div class="form-row mt-4">
+                <label for="Mensaje">Mensaje</label>
+                <textarea class="form-control" id="Mensaje" rows="3" placeholder="Ingresar un mensaje" required></textarea>
+                <div class="invalid-feedback">
+                  Por favor, ingrese un mensaje.
+                </div>
+              </div><!-- End of form-row -->
+
+              <!-- Modal de Confirmación -->
+              <div class="modal fade" id="confirmarModal" tabindex="-1" role="dialog" aria-labelledby="confirmarModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="confirmarModalLabel">Confirmar mensaje</h5>
+                    </div>
+                    <div class="modal-body">
+                      <span class="text-info">Nombre:</span> 
+                      <span id="modalNombre"></span>
+                      <span id="modalApellido"></span>
+                      <br>
+                      <span class="text-info">Tipo de Bulling:</span> 
+                      <span id="modalTipoBullying"></span>
+                      <br>
+                      <span class="text-info">Barrio:</span>
+                      <span id="modalBarrio"></span>
+                      <br>
+                      <span class="text-info">Contacto:</span>
+                      <span id="modalContacto"></span>
+                      <br>
+                      <span class="text-info">Mensaje:</span> 
+                      <div id="modalMensaje"></div>
+                      <br>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+
+                      <button type ="text" 
+                              class ="btn btn-primary"
+                              data-dismiss ="modal"
+                              data-toggle ="modal"
+                              data-target ="#enviarModal"
+                              >Confirmar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Modal -->
+
+              <!-- Modal de Envío del Mensjae -->
+              <div class="modal fade" id="enviarModal" tabindex="-1" role="dialog" aria-labelledby="enviarModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="enviarModalLabel">Enviar mensaje</h5>
+                    </div>
+                    <div class="modal-body">
+                      <h3 class="text-info">Tu mensaje ha sido enviado.</h3>
+                    </div>
+                    <div class="modal-footer">
+                      <button id="Limpiar" type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Modal 2 -->
+
+            </div><!-- End of Columna 1 -->
+
+
+            <!--COLUMNA IMAGEN -->
+            <div class="col-md-4">
+              <img src="img/img2.jpg" id="img2" class="img-fluid  mx-auto" alt="Responsive image">
+            </div><!-- End of Columna 2-->
+
+          </div><!-- End of row -->
+        </div><!-- End of container -->
+      </section><!-- End of section -->
+    </form>
+
+    <div class="boton_enviar">
+      <!-- Boton Enviar -->
+      <button type="text" 
+              class="btn btn-primary"  
+              id="Enviar">
+        Enviar
+      </button>
+      <button type="text" 
+              class="btn btn-primary"  
+              id="clear">
+        Limpiar
+      </button>
+    </div>
+
+    <footer class="pt-5 pb-4 pl-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <p>Copyright © 2018 - Desarrollado por Damian Debortoli</p>
+          </div><!-- end of col -->
+        </div><!-- End of row -->
+      </div><!-- End of container -->
+    </footer><!-- End of footer -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="miCodigo.js"></script>
+  </body>
+</html>
